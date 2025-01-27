@@ -27,7 +27,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 5em;
     align-items: center;
     text-align: center;
     padding: 3em 0;
@@ -40,8 +40,6 @@
 
         p { 
             font-size: 1em;
-            line-height: 2em;
-            margin-left: 2em;
         }
     }
 
@@ -54,7 +52,7 @@
 }
 
 .text_container {
-    width: 30%;
+    max-width: 30%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -65,9 +63,6 @@
 #sec_meals {
     background: #ecb48b;
 
-        img {
-
-        }
         .order_switch{
             order: 2;
         }
@@ -170,3 +165,16 @@
         }
     }
 }
+
+/*
+@media only screen and (min-width: 600px) {
+    .content_container img {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .content_container img {
+        width: 30%;
+    }
+}*/
