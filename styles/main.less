@@ -123,13 +123,7 @@
             img {
                 width: 2em;
                 height: auto;
-            
-                &:hover {
-                    filter: grayscale(100%);
-                }
             }
-
-
         }
 
         .form_container{
@@ -160,13 +154,22 @@
                     height: 10em;
                 }
 
+                input, textarea{
+                    &:focus {
+                        background: #99a390;
+                    }
+                }
+
                 input[type=submit]{
                     background: #000;
                     color: #fff;
                     font-size: 1em;
 
+                   
                     &:hover {
-                        background: #c03310;
+                        transition: background 0.5s, color 0.5s;
+                        background: #99a390;
+                        color: #000;
                     }
                 }
             }
