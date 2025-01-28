@@ -99,9 +99,13 @@
 
     .description {
         p {
+            padding-bottom: 2em;                
+            text-align: center;
+            line-height: 1em;
+            font-size: 1em;
+
             a {
                 padding-right: 1em;
-                line-height: 1em;
             }
         }
     } 
@@ -166,7 +170,25 @@
     }
 }
 
-/*
+@media only screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 1.5em;
+        hyphens: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .content_container {
+        gap: 2em;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .content_container img {
         width: 40%;
@@ -174,7 +196,18 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .content_container img {
+    .content_container {
+        
+        p {
+            width: 40%;
+        }
+
+        img {
+            width: 30%;
+        }
+    }
+
+    #sec_contact .content_container .form_container {
         width: 30%;
     }
-}*/
+}
