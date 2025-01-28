@@ -42,17 +42,10 @@ header {
                             background: #e8b812;
                             color: #000;
                         }
-
                     }
-                }  
-                
-                .burger_menu {
-                    display: none;
-                    width: 2em;
-                    margin-right: 2em;
-                }
+                }                  
             }
-    }
+}
     
     
     #header_text{
@@ -69,17 +62,32 @@ header {
         }
     }
 
-    
-    @media only screen and (max-width: 600px) {
+    .burger_div {
+        display: none;
+        background: #d6c8bb;
+        width: 6em;
+        padding: 2em;
+        clip-path: circle(30px at center);
 
-        header #header_div ul {
-            display: none;
+        .burger_menu {
+            width: 2em;
+            margin-right: 2em;
+
         }
-
-        header #header_div .burger_menu {
-            display: block;
-        }
-
-        
     }
     
+ @media only screen and (max-width: 600px) {
+
+    header #header_div {
+
+        ul {
+            display: none;
+        }
+    
+        .burger_div {
+            display: block;
+        }
+    }
+
+        
+}
