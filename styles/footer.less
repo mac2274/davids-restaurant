@@ -15,18 +15,31 @@ footer {
 
         a {
             color: #000;
-            
-            img {
-                width: 100px;
-                height: auto;
-                clip-path: circle(50px at center)
-            }
 
             &:hover{
+                transition: background 0.5s, color 1s;
                 background: #ca8551;
+                color: #fff;
+            }
+
+    
+        }
+    
+        .logo_container{ 
+            img {
+                width: 5em;
+                height: auto;
+                clip-path: circle(40px at center);
+
+                &:hover {
+                    transition: filter 1s;
+                    background: none!important;
+                    filter: blur(2px) grayscale(100%);
+                }
             }
         }
-            
+
+
         .burger_div {
             display: none;
         }
