@@ -64,10 +64,22 @@ header {
         }
     }
 }
-    
-    
- @media only screen and (max-width: 600px) {
+
+
+@media only screen and (max-width: 600px) {
+    header #header_div {
+        nav {        
+            #burger_div {
+                display: block;
+
+                ul {
+                    display: none;
+                }
+            }
+        }
+    }
 }
+
 
 @media only screen and (min-width: 1600px) {
     header #header_text p {
