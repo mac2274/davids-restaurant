@@ -106,6 +106,14 @@
 
             a {
                 padding-right: 1em;
+
+                img{
+                    
+                    &:hover {
+                        transition: filter 0.5s;
+                        filter: invert(1);
+                    }
+                }
             }
         }
     } 
@@ -157,6 +165,10 @@
                 input, textarea{
                     &:focus {
                         background: #99a390;
+
+                        &::placeholder {
+                            color: #fff;
+                        }
                     }
                 }
 
@@ -168,7 +180,7 @@
                    
                     &:hover {
                         transition: background 0.5s, color 0.5s;
-                        background: #99a390;
+                        background: #ecb48b;
                         color: #000;
                     }
                 }
