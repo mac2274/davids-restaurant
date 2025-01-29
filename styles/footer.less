@@ -15,14 +15,6 @@ footer {
 
         a {
             color: #000;
-
-            &:hover{
-                transition: background 0.5s, color 1s;
-                background: #ca8551;
-                color: #fff;
-            }
-
-    
         }
     
         .logo_container{ 
@@ -48,11 +40,20 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            li a img {
-                width: 2em;
+
+                .hover {
+                    &:hover {
+                        transition: background 0.5s, color 1s;
+                        background: #ca8551;
+                        color: #fff;
+                    }
+                }
+                
+                img {
+                    width: 2em;
+                }
             }
-        }
+        
     }
 } 
 
