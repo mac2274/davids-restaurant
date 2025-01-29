@@ -7,100 +7,66 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1em;
 
-        h1{
-            text-align: center;
-            height: 3em;
-            display: none;
-        }
-                    
-        a img{
-            width: 100px;
-            height: auto;
-            clip-path: circle(50px at center);
+        #logo_container {
+            h1{
+                text-align: center;
+                height: 3em;
+                display: none;
+            }
                         
-            &:hover {
-                transition: filter 1s;
-                filter: blur(2px) grayscale(100%);
+            a img{
+                width: 100px;
+                height: auto;
+                clip-path: circle(50px at center);
+                            
+                &:hover {
+                    transition: filter 1s;
+                    filter: blur(2px) grayscale(100%);
+                }
+            }
+        }        
+
+        nav {
+            #burger_div {
+                display: none;
+                background: #d6c8bb;
+                width: 6em;
+                clip-path: circle(30px at center);
+
+                #burger_menu {
+                    width: 2em;
+                    height: auto;
+                    margin-right: 2em;
+                }
+            }
+                    
+            ul {
+                display: flex;
+                flex-direction: row;
+                background: rgba(234, 221, 212, 0.9);
+                padding: 0;
+                    
+                li{
+                    a{  
+                        color: #000;
+                        font-weight: bold;
+                        
+                        a:hover{
+                                transition: background 2s, color 0.5s;
+                                background: #000;
+                                color: rgba(234, 221, 212, 0.9);
+                        }
+                    }                  
+                }
             }
         }
     }
-               
-                ul {
-                    display: flex;
-                    flex-direction: row;
-                    background: rgba(234, 221, 212, 0.9);
-                    padding: 0;
-                
-                    li{
-                        
-                        a{  
-                            color: #000;
-                            font-weight: bold;
-                        }
-                        a:hover{
-                            transition: background 2s, color 0.5s;
-                            background: #000;
-                            color: rgba(234, 221, 212, 0.9);
-                        }
-                    }
-                }                  
-            
 }
     
-#hero_div {
-    position: absolute;
-    top: 0;
-    background: url("../resources/img/indoor_ruben-ramirez-xhKG01FN2uk-unsplash.jpg") no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: end;
-}
-    
-    #hero_text{
-        background:rgba(234, 221, 212, 0.8);
-        display: flex;
-        flex-direction: column;
-        width: 30%;
-        padding:  0 1.5em 1.5em;
-        margin: 3em;
-
-        h2{
-            text-align: left;
-            padding-left: 0;
-        }
-    }
-
-    .burger_div {
-        display: none;
-        background: #d6c8bb;
-        width: 6em;
-        padding: 2em;
-        clip-path: circle(30px at center);
-
-        .burger_menu {
-            width: 2em;
-            margin-right: 2em;
-
-        }
-    }
     
  @media only screen and (max-width: 600px) {
-
-    header #header_div {
-
-        ul {
-            display: none;
-        }
-    
-        .burger_div {
-            display: block;
-        }
-    }
 }
 
 @media only screen and (min-width: 1600px) {
